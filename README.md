@@ -1,20 +1,20 @@
 # oscilloscope-asteroids
 
-Oscilloscope Asteroids game
-===========================
+Asteroids clone for oscilloscope
+================================
 
-by Joe McKenzie / Chupi
-October 11, 2011
+by Joe McKenzie / Chupi  
+October 11, 2011  
 This is the same content as README.txt, except reformatted into basic Markdown.
 
 
-    I've seen some YouTube videos where people made games on oscilloscopes. But
+I've seen some YouTube videos where people made games on oscilloscopes. But
 all those use "fancy" setups, like a digital scope with 2 beams and an FPGA to
 generate the signals to drive it. So I set out to make a game using just my old
 Knight Kit analog one-beam scope and a computer with a stereo sound card. This
 is the result.
 
-    There are 2 versions of this. Asteroids-scope (the "real" version) draws
+There are 2 versions of this. Asteroids-scope (the "real" version) draws
 vector graphics and renders them to looping sound clips it plays. You need an
 oscilloscope and stereo sound card to use this one. Asteroids-window (the "fake"
 version) draws the exact same graphics, but renders them to a window on your
@@ -106,36 +106,36 @@ Hardware and tools:
  * A knife, scissors, wire stripping tool, etc. Anything to take insulation off
       the audio cable.
 
-    Chop off the audio cable so you have a headphone plug you can connect to
+Chop off the audio cable so you have a headphone plug you can connect to
 your computer, and enough wire to easily reach your scope. Note the wire colors.
 There will be 3-4 wires. Right is usually red, left usually green or white.
 Ground is usually either black or uninsulated. If your wires are colored but
 not insulated, they're enameled -- remove the enamel with fine sandpaper, a
 flame, or carefully with a knife.
 
-    Locate the vertical and horizontal inputs on your scope. Connect the left
+Locate the vertical and horizontal inputs on your scope. Connect the left
 wire to vertical and right to horizontal. You might have to strip or split 6
 inches of cable to make it reach the 2 inputs.
 
-    If you don't know which one is right or left, it doesn't matter. The
+If you don't know which one is right or left, it doesn't matter. The
 software can handle it so long as you have one channel attached to vertical and
 one attached to horizontal. Polarity of each channel doesn't matter either.
 (Press the "M" key on the game's title screen to cycle through all (8) possible
  permutations of backward left, backward right, and switched left and right.)
 
-    Now you have 1 or 2 ground wires left. Connect them to the scope's ground
+Now you have 1 or 2 ground wires left. Connect them to the scope's ground
 terminals. There's most likely a ground terminal next to each input. If you
 only have 1 ground wire (as with many headphones), connect it to one terminal.
 It might help to run a separate wire between the ground terminals if you only
 have one ground wire.
 
-    Make sure your wires are screwed down tight. If you like, you can now
+Make sure your wires are screwed down tight. If you like, you can now
 connect an iPod or other audio source to the headphone plug and play some music
 through it. In normal mode, the scope should show one channel of the sound. If
 you set it to external horizontal drive, you should see an interesting blob
 pulsing and wiggling to the music.
 
-    Plug the headphone plug into the computer's line out or headphone jack.
+Plug the headphone plug into the computer's line out or headphone jack.
 Make sure your computer is set to play sound to that jack, plug the cable in
 and turn the volume to the max. Now launch asteroids-scope.
 
@@ -209,10 +209,10 @@ with universal binaries and built-in SDL.framework. See makefile comment.
 SOURCE FILES
 ============
 
-main.c :  Initialization and game program
-gfx.h  :  Vector graphics library header
-gfx.c  :  Vector graphics output-to-audio code
-gfx_debug.c : Vector graphics output-to-window-on-the-screen code
+main.c :  Initialization and game program  
+gfx.h  :  Vector graphics library header  
+gfx.c  :  Vector graphics output-to-audio code  
+gfx_debug.c : Vector graphics output-to-window-on-the-screen code  
 asteroids_objects.h : Assorted vector shapes for the game, in polar coordinates
 
 
