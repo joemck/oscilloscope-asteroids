@@ -24,6 +24,9 @@
 #
 # TL;DR: The normal targets require a functioning MacPorts SDL. The
 # mac-redist target requires both MacPorts SDL and the official SDL.
+#
+# 5 Jun 2015: If you add -DNOBOX to CFLAGS here, it won't draw the border
+# or the ray randomization it causes.
 # 
 # I'm releasing this code under the WTFPL. You can do whatever you like with
 # it, though I'd appreciate credit and thanks if you find it useful or fun.

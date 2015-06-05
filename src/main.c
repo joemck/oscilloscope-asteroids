@@ -117,6 +117,7 @@ void drawObj(const double *obj, double angle, double radius, double offX, double
 //draw a box around the screen, starting at a random location
 //helps stabilize the picture on an analog oscilloscope
 void recenter(void) {
+#ifndef NOBOX
 	int i, offs = rand()%4, j;
 	static const double box[] = {
 		0, 0,
@@ -124,12 +125,13 @@ void recenter(void) {
 		1000, 1000,
 		0, 1000,
 	};
-	
+
 	moveTo(box[offs*2], box[offs*2+1]);
 	for(i=1; i<5; i++) {
 		j = 2*((i+offs)%4);
 		lineTo(box[j], box[j+1], 0.3);
 	}
+#endif
 }
 
 int main(int argc, char **argv) {
